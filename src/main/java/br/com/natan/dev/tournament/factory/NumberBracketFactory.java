@@ -1,12 +1,11 @@
 package br.com.natan.dev.tournament.factory;
 
 import br.com.natan.dev.tournament.components.Bracket;
+import br.com.natan.dev.tournament.utils.Pair;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Spliterator;
 
 public class NumberBracketFactory implements BracketFactory {
@@ -30,9 +29,8 @@ public class NumberBracketFactory implements BracketFactory {
     }
 
     private Bracket generateRandomBracket(String firstParticipant, String secondParticipant, int size) {
-        Map<String, String> map = new HashMap<>();
-        map.put(firstParticipant, secondParticipant);
-        return new Bracket(size, map);
+        Pair<String, String> bracket = Pair.of(firstParticipant, secondParticipant);
+        return new Bracket(size, bracket);
     }
 
     private int getBracketNumber(List<Bracket> brackets) {

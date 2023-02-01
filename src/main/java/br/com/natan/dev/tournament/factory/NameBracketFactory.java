@@ -1,11 +1,10 @@
 package br.com.natan.dev.tournament.factory;
 
 import br.com.natan.dev.tournament.components.Bracket;
+import br.com.natan.dev.tournament.utils.Pair;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 
@@ -27,9 +26,8 @@ public class NameBracketFactory implements BracketFactory {
 
     private Bracket generateBracket(List<String> participants, int number) {
         raffleParticipants(participants);
-        Map<String, String> tournamentMap = new HashMap<>();
-        tournamentMap.put(firstParticipant, secondParticipant);
-        return new Bracket(number, tournamentMap);
+        Pair<String, String> bracket = Pair.of(firstParticipant, secondParticipant);
+        return new Bracket(number, bracket);
     }
 
     private void raffleParticipants(List<String> participants) {

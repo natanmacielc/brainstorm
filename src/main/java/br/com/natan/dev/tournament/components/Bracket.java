@@ -1,21 +1,21 @@
 package br.com.natan.dev.tournament.components;
 
-import java.util.Map;
+import br.com.natan.dev.tournament.utils.Pair;
 
 public class Bracket {
     private final Integer number;
-    private final Map<String, String> bracket;
+    private final Pair<String, String> participants;
 
-    public Bracket(Integer number, Map<String, String> bracket) {
+    public Bracket(Integer number, Pair<String, String> participants) {
         this.number = number;
-        this.bracket = bracket;
+        this.participants = participants;
     }
 
     public Integer getNumber() {
         return number;
     }
 
-    public Map<String, String> getBracket() {
-        return bracket;
+    public Pair<String, String> getParticipants() {
+        return participants;
     }
 }

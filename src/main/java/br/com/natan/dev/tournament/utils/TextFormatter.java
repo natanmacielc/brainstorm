@@ -8,23 +8,21 @@ import java.util.List;
 public class TextFormatter {
     public static String tournamentFormatter(List<Bracket> brackets) {
         StringBuilder builder = new StringBuilder();
-        Iterator<Bracket> bracketIterator = brackets.iterator();
-        bracketIterator.next();
-
+        Iterator<Bracket> iterator = brackets.iterator();
+        iterator.next();
         brackets.forEach(
-                tournamentBracket -> tournamentBracket.getBracket().forEach(
-                        (firstParticipant, secondParticipant) -> {
-                            builder.append(tournamentBracket.getNumber());
-                            builder.append("º Combate: \n");
-                            builder.append(firstParticipant);
-                            builder.append(" vs ");
-                            builder.append(secondParticipant);
-                            if (bracketIterator.hasNext()) {
-                                builder.append("\n");
-                                bracketIterator.next();
-                            }
-                        }
-                )
+                bracket -> {
+                    Pair<String, String> participants = bracket.getParticipants();
+                    builder.append(bracket.getNumber());
+                    builder.append("º Combate: \n");
+                    builder.append(participants.getLeft());
+                    builder.append(" vs ");
+                    builder.append(participants.getRight());
+                    if (iterator.hasNext()) {
+                        builder.append("\n");
+                        iterator.next();
+                    }
+                }
         );
 
         return builder.toString();
