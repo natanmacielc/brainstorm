@@ -1,4 +1,4 @@
-package ideas.libraries;
+package br.com.natan.dev.libraries;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;

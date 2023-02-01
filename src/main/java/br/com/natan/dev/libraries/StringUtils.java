@@ -1,4 +1,4 @@
-package ideas.libraries;
+package br.com.natan.dev.libraries;
 
 public class StringUtils {
 

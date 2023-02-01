@@ -1,4 +1,4 @@
-package ideas.libraries.enums;
+package br.com.natan.dev.libraries.enums;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

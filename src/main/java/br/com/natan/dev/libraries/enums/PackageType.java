@@ -1,7 +1,6 @@
-package ideas.libraries.enums;
+package br.com.natan.dev.libraries.enums;
 
 public enum PackageType {
-    ODIN("com.globalcards.odin"),
     HIBERNATE("org.hibernate");
 
     String value;

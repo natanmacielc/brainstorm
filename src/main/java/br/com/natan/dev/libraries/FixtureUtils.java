@@ -1,7 +1,7 @@
-package ideas.libraries;
+package br.com.natan.dev.libraries;
 
-import ideas.libraries.enums.FieldType;
-import ideas.libraries.enums.PackageType;
+import br.com.natan.dev.libraries.enums.FieldType;
+import br.com.natan.dev.libraries.enums.PackageType;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

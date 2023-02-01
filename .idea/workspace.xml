@@ -5,11 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1023b28d-6f9e-4d5b-83c1-10d8d1750ed3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ideas/libraries/FixtureUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ideas/libraries/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ideas/libraries/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ideas/libraries/enums/FieldType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/TournamentRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/components/Bracket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/components/Tournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/BracketFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/NameBracketFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/NameTournamentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/NumberBracketFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/NumberTournamentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/factory/TournamentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/utils/FileNotExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/utils/InvalidParticipantsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/utils/PathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/tournament/utils/TextFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/dojo/OlaDevDojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/abstrato/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/abstrato/entities/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/abstrato/entities/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/abstrato/entities/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/abstrato/entities/enums/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/heranca/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/heranca/entities/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/heranca/entities/BusinessAcount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/heranca/entities/SavingsAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/udemy/poo/polimorfismo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ideas/libraries/FixtureUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/libraries/FixtureUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ideas/libraries/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/libraries/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ideas/libraries/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/libraries/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ideas/libraries/enums/FieldType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/libraries/enums/FieldType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ideas/libraries/enums/PackageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/natan/dev/libraries/enums/PackageType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +64,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/natan/Documents/Estudos/Java/natan-dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Natan/dev/projects/git/brainstorm/src/main/java/br/com/natan/dev",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.natan.dev.udemy.poo.abstrato.entities" />
       <recent name="br.com.natan.dev.udemy.poo.heranca.entities" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Natan\dev\projects\git\brainstorm\src\main\resources\br\com\natan\dev\tournament" />
+      <recent name="C:\Users\Natan\dev\projects\git\brainstorm\src\main\java\br\com\natan\dev" />
+      <recent name="C:\Users\Natan\dev\projects\git\brainstorm\src\main\java\br\com\natan\dev\tournament" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.br.com.natan.dev.udemy.poo.polimorfismo.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="br.com.natan.dev.Main" />
-      <module name="natan-dev" />
+      <module name="brainstorm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.natan.dev.*" />
@@ -108,10 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.br.com.natan.dev.udemy.poo.polimorfismo.Main" />
         <item itemvalue="Application.br.com.natan.dev.udemy.poo.heranca.Main" />
         <item itemvalue="Application.OlaDevDojo" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +160,7 @@
       <workItem from="1656641585387" duration="118000" />
       <workItem from="1656641710990" duration="10152000" />
       <workItem from="1660059970013" duration="304000" />
+      <workItem from="1675266876892" duration="326000" />
     </task>
     <servers />
   </component>
