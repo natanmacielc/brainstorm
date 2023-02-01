@@ -31,16 +31,16 @@ public abstract class TournamentFactory {
             validateParticipantsList(participants);
             return participants;
         } catch (IOException e) {
-            throw new FileNotExistsException(path.toString().concat(" does not exist."));
+            throw new FileNotExistsException(path.toString());
         }
     }
 
     private void validateParticipantsList(List<String> participants) {
         if (Objects.equals(participants.size() % 2, 1))
-            throw new InvalidParticipantsList("Enter a valid number of participants.");
+            throw new InvalidParticipantsList();
     }
 
     protected String getFileName() {
-        return "\\fileName.txt";
+        return "";
     }
 }
